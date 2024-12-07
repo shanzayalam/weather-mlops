@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1733166890381
+current_stage: None
+description: ''
+last_updated_timestamp: 1733166890381
+name: WeatherModel
+run_id: 7b2f4451879244b684ff934b42ced7fe
+run_link: ''
+source: file:///C:/Users/hp/MlopsProject/weather-mlops/mlruns/460737635753077054/7b2f4451879244b684ff934b42ced7fe/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/hp/MlopsProject/weather-mlops/mlruns/460737635753077054/7b2f4451879244b684ff934b42ced7fe/artifacts/model
+user_id: null
+version: 1
