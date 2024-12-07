@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/hp/MlopsProject/weather-mlops/mlruns/460737635753077054
+creation_time: 1733166545535
+experiment_id: '460737635753077054'
+last_update_time: 1733166545535
+lifecycle_stage: active
+name: Weather Prediction Pipeline
