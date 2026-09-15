@@ -1,12 +1,19 @@
 import requests
 import pandas as pd
 from datetime import datetime
+from dotenv import load_dotenv
+import os
 
-API_KEY = "8b4bc5079f4044efcc9e87c75e1dfa5b"
-CITY = "Islamabad"
-URL = f"https://api.openweathermap.org/data/2.5/forecast?q=Islamabad&APPID=8b4bc5079f4044efcc9e87c75e1dfa5b"
+# Load environment variables from .env file
+load_dotenv()
 
-response = requests.get(URL)
+API_KEY = os.getenv("OPENWEATHER_API_KEY")
+CITY = os.getenv("OPENWEATHER_CITY", "Islamabad")  # Default to Islamabad if not set
+URL = f"https://api.openweathermap.org/data/2.5/forecast?q={CITY}&APPID={API_KEY}"
+
+if not API_KEY:
+    raise ValueError("OPENWEATHER_API_KEY not found in environment variables. Please set it in .env file.")
+
 response = requests.get(URL)
 
 if response.status_code == 200:
